@@ -1,0 +1,41 @@
+<ion-content class="background">
+
+  <ion-title class="ion-padding-top ion-text-center">
+    <h1>Sistema de asitencia Duoc</h1>
+    <ion-label>
+      <p>Recupera tu contraseña</p>
+    </ion-label>
+  </ion-title>
+
+  <div class="ion-padding-vertical">
+    
+    
+    <ion-card class="ion-text-center ion-padding-vertical">
+
+      <form>
+        <ion-card-title class="ion-text-center">
+          <ion-label>
+            <h2>Bienvenido</h2>
+          </ion-label>
+        </ion-card-title>
+
+        <ion-card-content>
+          
+
+          <ion-item>
+            <ion-input name="correo" label="Correo" labelPlacement="floating" type="text" [(ngModel)]="usuario.correo"></ion-input>
+          </ion-item>
+          
+
+          
+          <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+
+        </ion-card-content>
+
+        
+      </form>
+      
+    </ion-card>
+  </div>
+  
+</ion-content>

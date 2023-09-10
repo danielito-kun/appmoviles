@@ -1,0 +1,15 @@
+/*Boton*/
+ion-button {
+    --background: #252440;
+    --background-hover: #252440;
+    --background-activated: #252440;
+    --background-focused: #252440;
+
+    --color: rgb(255, 255, 255);
+
+    border-radius: 15px;
+}
+
+.cambiacolor{
+    color: white;
+}

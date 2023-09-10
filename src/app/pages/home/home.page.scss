@@ -1,0 +1,34 @@
+.cambiacolor{
+    color: white;
+}
+
+ion-toolbar{
+    --background: #252440;
+    --background-hover: #252440;
+    --background-activated: #252440;
+    --background-focused: #252440;
+
+    --color: rgb(255, 255, 255);
+}
+ion-button {
+    --background: #252440;
+    --background-hover: #252440;
+    --background-activated: #252440;
+    --background-focused: #252440;
+
+    --color: rgb(255, 255, 255);
+
+    border-radius: 15px;
+}
+
+ion-card-title{
+    --color: rgb(255, 255, 255);
+}
+ion-card{
+    --background: #252440;
+    --background-hover: #252440;
+    --background-activated: #252440;
+    --background-focused: #252440;
+
+    --color: rgb(255, 255, 255);
+}

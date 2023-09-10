@@ -1,0 +1,47 @@
+
+<ion-content class="background">
+  <ion-title class="TITULO ion-text-center">
+    <h1 class="TITULO">Sistema de asitencia Duoc</h1>
+    <ion-label>
+      <p>Inicia sesion aquí</p>
+    </ion-label>
+  </ion-title>
+
+  <div class="ion-padding-vertical">
+    <!--CARD-->
+    <ion-card class="colorcl ion-text-center ion-padding-vertical">
+
+      <!-- TITULO -->
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h2>Bienvenido</h2>
+        </ion-label>
+      </ion-card-title>
+
+      <!-- FORMULARIO -->
+      <form >
+        <!-- CONTENIDO DEL CARD -->
+        <ion-card-content>
+          
+          <!-- CORREO -->
+          <ion-item>
+            <ion-input name="correo" label="Correo" labelPlacement="floating" type="text" [(ngModel)]="usuario.correo"></ion-input>
+          </ion-item>
+          <br>
+          <!-- CONTRASEÑA -->
+          <ion-item>
+            <ion-input name="password"  label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="usuario.password"></ion-input>
+          </ion-item>
+          <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+
+        </ion-card-content>
+      </form>
+      
+      <ion-label>
+        <br>
+        <a class="rercontra" routerLink="" (click)="recuperar()">Recupera tu contraseña</a>
+      </ion-label>
+    </ion-card>
+  </div>
+  
+</ion-content>

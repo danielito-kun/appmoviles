@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title #titulo>
+      Asistencia Duoc
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">pregunta</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-title class="ion-padding-top">
+      <ion-label class="ion-text-center">
+        <h1>¡Bienvenido!</h1>
+        <p class="pcolor" *ngIf="usuario">Usuario: {{ usuario.nombre }} {{usuario.apellido}}</p>
+        <h4> Por favor responda</h4>
+        <h4 *ngIf="usuario">{{usuario.pregunta}}</h4>
+      </ion-label>
+
+    </ion-title>
+    <form>
+      <!-- Contenido del card -->
+      <ion-card-content>
+        
+        <!-- Item de correo -->
+        <ion-item>
+          <!-- Usamos ngModel para indicarle al input que se ligará con la propiedad "usuario.correo" -->
+          <ion-input name="respuesta" label="respuesta" labelPlacement="floating" type="text" [(ngModel)]="usuario.respuesta"></ion-input>
+        </ion-item>
+        
+
+        <!-- Se debe usar (click) para enlazar con el método de la clase en typescript -->
+        <ion-button shape="block" (click)="ingresar()">Ingresar</ion-button>
+
+      </ion-card-content>
+
+      
+    </form>
+    
+</ion-content>

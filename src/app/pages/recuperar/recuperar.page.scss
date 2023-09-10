@@ -1,0 +1,35 @@
+
+
+ion-title{
+    color: rgb(0, 0, 0);
+}
+p{
+    color: black;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+ion-card{
+    --background-color: #feee04;
+}
+ion-item{
+    --background: #4B4B4B;
+    --background-hover: #4B4B4B;
+    --background-activated: #4B4B4B;
+    --background-focused: #4B4B4B;
+    
+    color: white;
+
+    border-radius: 15px;
+}
+
+ion-button {
+    --background: #252440;
+    --background-hover: #252440;
+    --background-activated: #252440;
+    --background-focused: #252440;
+
+    --color: rgb(255, 255, 255);
+
+    border-radius: 15px;
+}
